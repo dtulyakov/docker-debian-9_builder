@@ -16,5 +16,7 @@ RUN set -x \
      libpcre3-dev \
      unzip \
      uuid-dev \
+     apache2-dev \
+     libxml2-dev \
   && apt-get autoremove -y \
   && rm -fr /var/lib/apt/lists/* /tmp/* /var/tmp/* /var/cache/apt/archives/*
