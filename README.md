@@ -1,10 +1,9 @@
-[![Build Status](https://travis-ci.org/dtulyakov/docker-debian-9_cpp.svg?branch=master)](https://travis-ci.org/dtulyakov/docker-debian-9_cpp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/ddosguard/debian-9_cpp.svg)](https://hub.docker.com/r/ddosguard/debian-9_cpp/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/ddosguard/debian-9_builder.svg)](https://hub.docker.com/r/ddosguard/debian-9_builder/)
 
 ```BASH
-docker build --force-rm --no-cache --tag=dtulyakov/debian-9_cpp:latest . \
+docker build --force-rm --no-cache --tag=dtulyakov/debian-9_builder:latest . \
   && docker run --rm \
-     --name=debian-9_cpp \
+     --name=debian-9_builder \
      --volumes-from $(pwd)/DEB:/opt \
      --volumes-from $(pwd):/opt/repo \
      dtulyakov/debian-9_cpp:latest \
