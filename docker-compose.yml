@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  debian-9_builder:
+     image: ddosguard/debian-9_cpp
+     build: .
+     container_name: debian-9_builder
+     command: commandtobuildpkg
+     env_file: .env
+     volumes:
+         - /var/run/docker.sock:/var/run/docker.sock
+         - /usr/bin/docker:/usr/bin/docker
+         - debian-9_builder_home:/var/debian-9_builder_home
