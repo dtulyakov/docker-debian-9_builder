@@ -38,5 +38,9 @@ RUN set -x \
      apache2-dev \
      libxml2-dev \
      libcurl4-openssl-dev \
+     ed \
+     libltdl-dev \
+     lsb-release \
+     libecap3-dev \
   && apt-get autoremove -y \
   && rm -fr /var/lib/apt/lists/* /tmp/* /var/tmp/* /var/cache/apt/archives/*
