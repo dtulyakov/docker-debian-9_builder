@@ -44,5 +44,7 @@ RUN set -x \
      libecap3-dev \
      python3-pytest \
      python3-pytest-cov \
+     python3-etcd \
+     python3-msgpack \
   && apt-get autoremove -y \
   && rm -fr /var/lib/apt/lists/* /tmp/* /var/tmp/* /var/cache/apt/archives/*
